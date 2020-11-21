@@ -34,9 +34,6 @@
 .hotel-view{
     background-color: #fff;
     flex: 1; //element grows as much as it can -> occupy all available space
-    
-    //TEST:
-    height: 80rem;
 }
 
 .detail {
@@ -47,6 +44,7 @@
 }
 
 .description {
+    font-size: 1.4rem;
     background-color: #fff;
     box-shadow: var(--shadow-light);
     padding: 3rem;
