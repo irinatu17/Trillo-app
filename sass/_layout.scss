@@ -1,3 +1,6 @@
+////////////////////////////////////////
+// LANDING PAGE
+// Container 
 .container{
     max-width: 120rem;
     margin: 8rem auto; //center the container inside of the body element
@@ -10,8 +13,14 @@
         max-width: 100%;
         width: 100%;
     }
+
+    @media only screen and (max-width: $bp-smallest) {
+        overflow: hidden;
+    }  
 }
 
+////////////////////////////////////////
+// HEADER
 .header{
     font-size: 1.4rem;
     height: 7rem;
@@ -25,10 +34,12 @@
     @media only screen and (max-width: $bp-smallest) {
         flex-wrap: wrap;
         align-content: space-around;
-        height: 11rem;
+        height: 10rem;
     }
 }
 
+////////////////////////////////////////
+// CONTENT
 .content{
     display: flex;
 
@@ -37,21 +48,29 @@
     }
 }
 
+////////////////////////////////////////
+// SIDEBAR
 .sidebar{
     background-color: var(--color-grey-dark-1);
 
-    flex: 0 0 18%; //18% - width
+    flex: 0 0 18%; //18% - width: 18% of available row area 
+
+    // align items vertically (side nav-list and legal)
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
 }
 
+////////////////////////////////////////
+// HOTEL-VIEW
 .hotel-view{
     background-color: #fff;
     flex: 1; //element grows as much as it can -> occupy all available space
 }
 
+////////////////////////////////////////
+// DETAIL - MAIN SECTION
 .detail {
     font-size: 1.4rem;
     display: flex;
@@ -68,10 +87,13 @@
     }
 }
 
+////////////////////////////////////////
+// DESCRIPTION
 .description {
     background-color: #fff;
     box-shadow: var(--shadow-light);
     padding: 3rem;
+    // item to occupy 60% of container width (no grow/shrink)
     flex: 0 0 60%; 
     margin-right: 4.5rem;
 
@@ -86,6 +108,8 @@
     }
 }
 
+////////////////////////////////////////
+// USER REVIEWS
 .user-reviews {
     flex: 1;
     display: flex;
